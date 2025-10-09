@@ -1,0 +1,80 @@
+.kmp file format
+
+全ての空白は無視されます．
+行頭にハイフン'-'を使用することにより，その行は全て無視されます．
+大文字と小文字は区別されます．
+ファイルのエンコードはshift JISにしてください．
+IDは全てqwerty配列のものが適用されます．
+
+
+
+#!iddef : A : B
+説明:ID"B"の名をAにする．
+同一IDで複数#!iddefした場合，最後のものが適用されます．
+
+#dirdef : {ID} : {R or L}
+説明：キーを打つ手を明示します．
+このキーでは，Cmd==1stSendの時，キーが2ndSendのRLによって変化します．
+
+
+ID
+ID説明
+システム既定のIDを使用するには，IDの初めに ? を使用します．
+?から初まる全てのIDは予約されているので使用してはいけません．
+#!iddefで既定したIDを使用するには，IDの初めに ! を使用します．
+同一名称のIDは使用できません．(?XXXと!XXXはOK)
+ID名が一文字のみならば，?及び!は不要です．ただし，記号は使えません．
+
+{ID1} : {Cmd} : {ID2}
+IDは & を使用することにより，複数列挙できます．
+ID1 と ID2 が一致している場合，無視されます.
+ID1が被った場合，最後のものが適用されます．
+
+例
+ 
+?A & ?V : Send : ?C & ?COMMA & ?Z
+AかつVが同時に押された時，Cと,とZに置き換え．
+
+
+Cmdの種類
+
+Send  ID1をID2に置き換えます.
+
+I am not native English Speaker, so following sentence will be strange. But I have no responsibility when you read following sentence wrongly and this program attacked your computer, your computer show BSOD. Because the fact that you can not understand Japanese is the root cause of everything!
+
+
+All space will be ignored.
+When you use '-'(hyphen) in the head of a line, the line will be ignored.
+Case-Sensitive
+You must use file the encode : shift JIS
+All IDs will be assigned using the QWERTY layout.
+
+
+#!iddef : A : B
+explanation; Set ID B name is A. If you use same ID by #!iddef, latest one will be set.
+
+#dirdef : {ID} : {R or L}
+explanation; Explict the hand of typing.
+This key will if Cmd==1stSend, Key will change by 2ndSend RL.
+
+ID
+ID explanations.
+To use the ID which is decided by System, you use ? the head of ID.
+All ID which is begin with ? is registered, so you can not use.
+When you use ID which was defined by #!iddef, you use ! the head of ID.
+You can not use the same name ID, but ?XXX and !XXX are not same name.
+If the ID name is One Character, you do not have to use ! or ? the head of ID. However, you can not Symbols.
+
+
+{ID1} : {Cmd} : {ID2}
+If you use &, you can list up more than two.
+If ID1 and ID2 is same, this line will be ignored.
+If ID1 is already used, the latest one is used.
+
+Example
+ 
+?A & ?V : Send : ?C & ?COMMA & ?Z
+When A and V are typed at the same time, replace A and V with C and , and Z.
+
+The type of Cmd.
+Send  Replace ID1 with ID2.
