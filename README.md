@@ -1,5 +1,6 @@
 # Q-ELF
-Q-ELF is the next generations keymap.
+Q-ELF is the next fantastic-crazy-smart-japanese keyboard keymap!
+Q-ELF配列は次世代の日本語キー配列です!
 
 Windows 11で動作確認をしています。
 DXライブラリが必要です。
