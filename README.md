@@ -14,6 +14,6 @@ Q-ELF is the next fantastic-crazy-smart-japanese keyboard keymap!
 Q-ELF keymap can type by using only middle line of the JP-keyboard. You can use this tool stress-free with SKK.
 If you do not like my keymap(=Q-ELF), you can redefine keymap as you like.
 I checked this Programm runs on Windows11!
-You must habe DXライブラリ。
+You must hav DXライブラリ。
 Please locate the file which this system need to run.
 I assume no responsibility whatsoever for any effects this program may have on your computer.
